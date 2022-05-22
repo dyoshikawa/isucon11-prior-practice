@@ -183,3 +183,5 @@ class App < Sinatra::Base
     File.read(File.join('public', 'index.html'))
   end
 end
+
+App.run!
