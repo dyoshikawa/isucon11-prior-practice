@@ -1,6 +1,7 @@
 module DB
   class << self
     def open
+      puts "open"
       Mysql2::Client.new(
         host: ENV['DB_HOST'] || '127.0.0.1',
         port: ENV['DB_PORT'] || '3306',

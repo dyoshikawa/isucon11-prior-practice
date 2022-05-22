@@ -1,3 +1,4 @@
-require_relative "app"
+# require_relative "db"
+# require_relative "app"
 
-App.run!
+client = Mysql2::Client.new(:host => "localhost", :username => "root")
